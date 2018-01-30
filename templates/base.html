@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            {{title}}
+        </title>
+        <script src="{{url_for('static',filename= 'js/webpage.js')}}" charset="utf-8"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <a href="/"> Home</a>                              
+                    </td>
+                    <td>
+                        <a class="nav_bar_left_margin" href="/forms">Test form</a>                            
+                    </td>
+                </tr>
+            </table>
+        </div> 
+        {% block content  %}
+
+
+        {% endblock %}
+
+    </body>
+
+    </html>
