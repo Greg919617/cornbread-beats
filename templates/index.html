@@ -2,17 +2,420 @@
 
 
 {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="static/css/musicPlayer.css" rel="stylesheet"/>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script src="static/js/script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        
+  
+        
+        <link rel="stylesheet" href="static/css/style.css">
+        
+        
+        <title>Natours | Exciting tours for adventurous people</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            
+            <div class="navigation__background">&nbsp;</div>
+            
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="" class="navigation__link">Subscribe <br> to get your free beats</a></li>
+                    <input type="email" class="subscribe-form" placeholder="email">
+                    
+                    <li class="navigation__item"><a href="" class="navigation__link"><span>05</span>Book Now</a></li>
+                </ul>
+            </nav>
 
-<p></p>
-<p></p>
+        </div>
 
-<p></p>
-<p></p>
-<button type="button" onclick="myAlert()">Alert me</button>
+    
+    
+   
+    <header class="header">
+        <div class="header-overlay">
+            <h4>Text Serious Inquiries Only 999-999-9999</h4>
+        </div>
+                
+        <div class="header__logo-box">
+               <!-- <img src="img/release-logo-trans.png" alt="Logo" class="header__logo"> -->
+               <!--<img src="img/logo-white.png" alt="logo" id="top-logo-container"> -->
+        </div>
+            
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop> 
+                <source src="static/img/SC.mp4" type="video/mp4">
+                <source src="static/img/SC.webm" type="video/webm">
+                    Your browser is not supported!
+            </video>
+        </div>
+                
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <img src="static/img/trial.png" alt="Full Logo">
+             </h1>
 
-<p></p>
-<p></p>
-<!--
-<button  type="button" onclick="alert('My test alert again')">Alert me again</button>
--->
+                <a href="#" class="btn btn--white btn--animated">Beats</a>
+                <span class= "spacer-span">|</span>
+                <a href="#popup1" class="btn btn--white btn--animated">Contact</a>
+            </div>
+        
+    
+           
+        </header>
+
+
+
+    
+        <section class="section-audio">
+                <div class="u-center-text u-margin-bottom big">
+                        <h2 class="heading-secondary">
+                                Audio
+                            </h2>
+                </div>
+                <div id="main">
+                    <div id="image">
+                        <img src="static/img/Poster1.jpg"/>
+                    </div>
+                    <div id="player">
+                        <div id="songTitle">Demo</div>
+                        <div id="buttons">
+                            <button id="pre" onclick="pre()"><img src="static/img/Pre.png" height="90%" width="90%"/></button>
+                            <button id="play" onclick="playOrPauseSong()"><img src="static/img/Pause.png"/></button>
+                            <button id="next" onclick="next()"><img src="static/img/Next.png" height="90%" width="90%"/></button>
+                        </div>
+                        
+                        <div id="seek-bar">
+                            <div id="fill"></div>
+                            <div id="handle"></div>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+    
+        
+            <section class="section-about">
+                
+                    
+                    <div class="u-center-text u-margin-bottom small">
+                            <h2 class="heading-secondary">
+                                Tracks for Leasing
+                            </h2>
+                            </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="here">
+                        <h3 class="kb">Menu</h3>
+                        <hr>
+                        <ol>
+                            <ul>
+                                <li class="active"><a href="#home">Home</a></li>
+                                <li class="footer__link"><a href="#popup">Login</a></li>
+                                <li class="footer__link"><a href="#popup">Package Discounts</a></li>
+                                <li class="footer__link"><a href="#popup">Add Coupon</a></li>
+                                <li class="footer__link"><a href="#popup">License Terms</a></li>
+                            </ul>
+                        </ol>
+                        <div>
+                            <h3 class="kb"> Instructions </h3>
+                            <hr>
+                            <div class="numbered">
+                                <ol>
+                                    <ul>
+                                        <li> 1. Click + ADD next to the beat(s) you wish to order</li>
+                                        <li> 2. Select the license you require</li>
+                                        <li> 3. When you are ready to order, click Buy Now in the top right to redirect to make payment.</li>
+                                        <li> 4. After payment you will receive the download links to your beats to your PayPal email address (please check your junk mail)</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+        
+                         
+                    
+                    <div class="top-bar">
+                        
+
+                    </div>
+                    
+                    <div class="col-2-of-3">
+                            <div class="here">
+                                <div class="left-portion">
+                                    
+                                </div>
+                                <div class="right-portion">
+                                        
+                                </div>
+
+                                <ol class="instructions">
+                                        <li>Click + Add next to the beat(s) you wish to order</li>
+                                        <li>Click + Add next to the beat(s) you wish to order</li>
+                                        <li>Click + Add next to the beat(s) you wish to order</li>        
+                                </ol>
+                            </div>
+                    </div>
+                    </div>
+                
+                </section>
+                <!--
+                <div class="u-center-text u-margin-bottom-big col-2-of-3">
+                    <h2 class="heading-secondary">
+                        Tracks
+                    </h2>
+                    
+                    <div class="form__group">
+                        <input type="text" name="search" placeholder="Search..." class="form-control search-field">
+                        <i class="search-icon fa fa-search"></i>
+                        <button class="btn btn--omega download">Download &rarr;</button>
+                        <button class="btn btn--omega download">Download &rarr;</button>
+                        <button class="btn btn--omega download">Download &rarr;</button>
+                        <button class="btn btn--omega download">Download &rarr;</button>
+                        <button class="btn btn--omega download">Download &rarr;</button>
+                    </div>
+                    
+                </div>
+            </section>
+        -->
+
+            <section class="section-tours">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Leasing Options
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-3">
+                       <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--1">MP3 + WAV LEASE</span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul class="cardList">
+                                        <li>Recieve HQ MP3 File, WAV File</li>
+                                        <li>Sell Up to 5,000 Copies</li>
+                                        <li>Use on mixtape Album, EP, Itunes, Streaming, ETC</li>
+                                        <li>Koren Maintains Ownership of the Beat</li>
+                                        <li>Must Credit "Prod. By K.Lee"</li>
+                                    </ul>
+                                </div>
+                        
+                            </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">$30</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Book Now!</a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-1-of-3">
+                            <div class="card">
+                                    <div class="card__side card__side--front">
+                                        <div class="card__picture card__picture--2">
+                                            &nbsp;
+                                        </div>
+                                        <h4 class="card__heading">
+                                            <span class="card__heading-span card__heading-span--2">TRACK OUT LEASE</span>
+                                        </h4>
+                                        <div class="card__details">
+                                            <ul class="cardList">
+                                                <li>Recieve HQ MP3 File, WAV File</li>
+                                                <li>Sell Up to 10,000 Copies</li>
+                                                <li>Use on mixtape Album, EP, Itunes, Streaming, ETC</li>
+                                                <li>Koren Maintains Ownership of the Beat</li>
+                                                <li>Must Credit "Prod. By K.Lee"</li>
+                                            </ul>
+                                        </div>
+                                
+                                    </div>
+                                <div class="card__side card__side--back card__side--back-2">
+                                        <div class="card__cta">
+                                            <div class="card__price-box">
+                                                <p class="card__price-only">Only</p>
+                                                <p class="card__price-value">$100</p>
+                                            </div>
+                                            <a href="#popup" class="btn btn--white">Book Now!</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                    </div>
+                        <div class="col-1-of-3">
+                            <div class="card">
+                                <div class="card__side card__side--front">
+                                    <div class="card__picture card__picture--3">
+                                        &nbsp;
+                                    </div>
+                                    <h4 class="card__heading">
+                                        <span class="card__heading-span card__heading-span--3">UNLIMITED LEASE</span>
+                                    </h4>
+                                <div class="card__details">
+                                    <ul class="cardList">
+                                        <li>Recieve HQ MP3 File, WAV File</li>
+                                        <li>Sell Up to Unlimited Copies</li>
+                                        <li>Use on mixtape Album, EP, Itunes, Streaming, ETC</li>
+                                        <li>Koren Maintains Ownership of the Beat</li>
+                                        <li>Must Credit "Prod. By K.Lee"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">$200</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Book Now!</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="u-center-text u-margin-top-huge">
+                    <a href="#" class="btn btn--green">Discover all tours</a>    
+                </div>
+
+            </section>
+           
+        </main>
+        
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <!--<img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo"> -->
+            </div>
+                <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Subscribe </a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Built by <a href="#" class="footer__link">Greg Jones</a> For my Portfolio using <a href="#" class="footer__link">Advanced CSS and SASS</a>. Copyright &copy; by Greg Jones
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text">
+                            Lorem ipsum dolor, adipisicing elit. Iure quo velit fuga qui deserunt quidem odio. sit amet consectetur adipisicing elit. Iure quo velit fuga qui deserunt quidem odio.adipisicing elit. Iure quo velit fuga qui deserunt quidem odio
+                            Lorem ipsum dolor, adipisicing elit. Iure quo velit fuga qui deserunt quidem odio. sit amet consectetur adipisicing elit. Iure quo velit fuga qui deserunt quidem odio.adipisicing elit. Iure quo velit fuga qui deserunt quidem odio
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
+        <!--
+        <section class="grid-test">
+            
+            <div class="row">
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    Col 2 of 3
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-2-of-4">
+                    Col 2 of 4
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-3-of-4">
+                    Col 3 of 4
+                </div>
+            </div>
+
+        </section>
+    -->
+    
+    <script src="script.js"></script>
+    </body>
+</html>
 {% endblock %}
